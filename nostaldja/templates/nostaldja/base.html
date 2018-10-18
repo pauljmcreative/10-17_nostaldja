@@ -1,0 +1,20 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nostaldja</title>
+
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/nostaldja.css' %}">
+    </head>
+    <body>
+        <h1>Nostal-dja</h1>
+        <nav>
+            <a href="/fads">Fads</a>
+            <a href="/">Decades</a>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'nostaldja/base.html' %}
+
+
+{% block content %}
+
+  {% for fad in fads %}
+    <section class="fad">
+      <h3><a href="/fads/{{fad.id}}">{{fad.name}} from: {{fad.decade.start_year}}</a></h3>
+      <p>{{ fad.description }}</p>
+    </section>
+  {% endfor %}
+
+{% endblock %}
+
+
+
+
